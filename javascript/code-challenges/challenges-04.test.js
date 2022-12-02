@@ -39,17 +39,19 @@ For example: 'Cat' would come before 'apple'
 
 const sortNames = (arr) => {
   // Solution code here...
-  const namSort = arr.sort((a, b) => {
-    if (a < b) {
-      return -1;
-    } else if (b < a) {
-      return 1;
-    } else {
-      return 0;
-    }
-  });
-  return (namSort);
+  //   const namSort = arr.sort((a, b) => {
+  //     if (a < b) {
+  //       return -1;
+  //     } else if (b < a) {
+  //       return 1;
+  //     } else {
+  //       return 0;
+  //     }
+  //   });
+  //   return (namSort);
+  return arr.sort();
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -69,7 +71,7 @@ CHALLENGE 4
 
 Write a function named sortBackwards that takes in an array of numbers and returns the same array, with the numbers sorted, largest to smallest.
 
-HINT: Do it with a custom sort callback, not with using `.reverse()`. ;)
+HINT: Do it with a custom sort callback, not with using `.reverse()`. ;
 ------------------------------------------------------------------------------------------------ */
 
 const sortBackwards = (arr) => {
@@ -89,16 +91,17 @@ For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 
 const alphabetize = (arr) => {
   // Solution code here...
-  const namSort = arr.sort((a, b) => {
-    if (a < b) {
-      return -1;
-    } else if (b < a) {
-      return 1;
-    } else {
-      return 0;
-    }
-  });
-  return (namSort);
+  // const namSort = arr.sort((a, b) => {
+  //   if (a < b) {
+  //     return -1;
+  //   } else if (b < a) {
+  //     return 1;
+  //   } else {
+  //     return 0;
+  //   }
+  // });
+  // return (namSort);
+  return arr.sort();
 };
 
 /* ------------------------------------------------------------------------------------------------
