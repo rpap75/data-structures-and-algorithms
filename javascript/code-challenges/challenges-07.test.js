@@ -26,7 +26,6 @@ let starWarsPeople = [
 
 const sortStarWarsCharacters = (starWarsArr) => {
   // Solution code here...
-  starWarsArr.height.sort((a, b) => b - a);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -37,10 +36,6 @@ Write a function named removeThree that takes an index and an array. The functio
 
 const removeThree = (idx, arr) => {
   // Solution code here...
-  // let threeGone = arr.slice(2, 5);
-  let threeGone = arr.splice(2, 3);
-  // console.log(threeGone);
-  return threeGone;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -51,9 +46,6 @@ Write a function named joinArray that takes an array and joins all of the elemen
 
 const joinArray = (arr) => {
   // Solution code here...
-  let arrJoin = arr.join(' ');
-  // console.log(arrJoin);
-  return arrJoin;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -71,13 +63,6 @@ For example, if the input is 'Welcome', the output will be:
 
 const howMuchPencil = (str) => {
   let result = [];
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] === [1]) {
-      str.splice(i, 1);
-    }
-    console.log(result);
-  }
-
   // Solution code here...
   return result;
 };
