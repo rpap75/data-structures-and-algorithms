@@ -15,6 +15,8 @@ You can assume that neither firstName nor lastName will be blank
 ------------------------------------------------------------------------------------------------ */
 const toLastNames = people => {
   // Solution code here...
+  fullName = [];
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -122,8 +124,18 @@ let starWarsData = [{
   gender: 'female'
 }];
 
+// const totalAmount = arr.reduce((accumulator, value) => {
+//   accumulator = accumulator + value.purchasePrice;
+//   return accumulator;
+// }, 0);
+// return totalAmount;
+
 const returnNames = (arr) => {
-  const starWars = arr.reduce((accumulator, value)=>)
+  const starWars = arr.reduce((accumulator, value) => {
+    accumulator = accumulator + value.name;
+    console.log(accumulator);
+    return accumulator;
+  }, 0);
   // Solution code here...
 
 };

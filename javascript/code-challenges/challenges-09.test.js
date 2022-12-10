@@ -130,6 +130,7 @@ const characters = [
 const getHouses = (arr) => {
   let houses = [];
   // Solution code here...
+
   return houses;
 };
 
@@ -147,7 +148,8 @@ hasChildrenValues(characters, 'Sansa') will return false
 
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
-
+  let array = Object.values(arr);
+  return array.includes(character);
 };
 
 /* ------------------------------------------------------------------------------------------------
