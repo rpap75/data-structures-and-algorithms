@@ -26,6 +26,7 @@ let starWarsPeople = [
 
 const sortStarWarsCharacters = (starWarsArr) => {
   // Solution code here...
+  return starWarsArr.sort((a, b) => b.height - a.height);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -36,6 +37,8 @@ Write a function named removeThree that takes an index and an array. The functio
 
 const removeThree = (idx, arr) => {
   // Solution code here...
+  arr.splice(idx, 3);
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -46,6 +49,7 @@ Write a function named joinArray that takes an array and joins all of the elemen
 
 const joinArray = (arr) => {
   // Solution code here...
+  return arr.join(' ');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -64,6 +68,12 @@ For example, if the input is 'Welcome', the output will be:
 const howMuchPencil = (str) => {
   let result = [];
   // Solution code here...
+  for (let i = 0; i < str.length + 1; i++) {
+    let remaining = str.slice(i);
+    // console.log(remaining, i);
+    result.push(remaining);
+  }
+  // console.log(result);
   return result;
 };
 
@@ -77,8 +87,8 @@ For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 
 const wordsToCharList = (arr) => {
   // Solution code here...
+  return arr.split('');
 };
-
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -122,9 +132,17 @@ const gruffaloCrumble = {
 
 
 const listFoods = (recipe) => {
-  let result = [];
+  let newFood = [];
+  for (let i = 0; i < recipe.ingredients.length; i++) {
+    let index = recipe.ingredients[i].indexOf(' ') + 1;
+    let sliced = recipe.ingredients[i].slice(index);
+    let almostSlice = sliced.indexOf(' ') + 1;
+    let lastSlice = sliced.slice(almostSlice);
+    newFood.push(lastSlice);
+    // console.log(lastSlice);
+  }
   // Solution code here...
-  return result;
+  return newFood;
 };
 
 /* ------------------------------------------------------------------------------------------------
