@@ -15,7 +15,13 @@ You can assume that neither firstName nor lastName will be blank
 ------------------------------------------------------------------------------------------------ */
 const toLastNames = people => {
   // Solution code here...
-  fullName = [];
+  let fullName = [];
+  people.map(person => {
+    let name = person.firstName + ' ' + person.lastName;
+    console.log(name);
+    fullName.push(name);
+  });
+  return fullName;
 
 };
 
@@ -131,13 +137,10 @@ let starWarsData = [{
 // return totalAmount;
 
 const returnNames = (arr) => {
-  const starWars = arr.reduce((accumulator, value) => {
-    accumulator = accumulator + value.name;
-    console.log(accumulator);
-    return accumulator;
-  }, 0);
-  // Solution code here...
-
+  let warsNames = [];
+  arr.reduce((allNames, value) => warsNames.push(value.name), []);
+  console.log('hellohelloe', warsNames);
+  return warsNames;
 };
 
 /* ------------------------------------------------------------------------------------------------

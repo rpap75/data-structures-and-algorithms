@@ -9,6 +9,8 @@ Write a function named returnTen, takes in a string and uses split and splice to
 
 function returnTen(str) {
   // Solution code here...
+  let data = str.split('').splice(-10);
+  return data;
 
 }
 
