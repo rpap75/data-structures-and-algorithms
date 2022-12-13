@@ -30,6 +30,14 @@ return: 23
 ------------------------------------------------------------------------------------------------ */
 const findMax = (matrix) => {
   // Solution code here...
+  let highVal = [];
+  for (let i = 0; i < matrix.legnth; i++) {
+    for (let j = 0; j < matrix.legnth; j++) {
+      console.log(highVal);
+      return highVal;
+    }
+
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -75,13 +83,11 @@ const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
   // Solution code here...
-  for (let i = 0; i <= stores.legnth - 1; i++) {
-    let line = '';
-    for (let j = 0; j <= stores[i].legnth - 1; j++) {
-      line = line + stores[i][j];
-    }
-    console.log(line);
-  }
+  // for (let i = 0; i <= stores.legnth - 1; i++) {
+
+  //   for (let j = 0; j <= cookieStores[i].legnth - 1; j++) {
+
+  //   }
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -95,6 +101,7 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
+  
   // Solution code here...
 };
 
