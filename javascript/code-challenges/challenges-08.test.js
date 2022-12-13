@@ -65,7 +65,8 @@ Write a function named containsW that takes in a string. This function should us
 
 const containsW = (str) => {
   // Solution code here...
-  let regex = /w/g;
+  let pattern = str.match(/w/g);
+  return pattern;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -96,8 +97,9 @@ Write a function named containsWorld that takes in a string or number of any len
 
 const containsWorld = (input) => {
   // Solution code here...
-  let regex = /(world)/g;
-  input.match(regex);
+  if (CanvasPattern.test('world')) {
+    return input;
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
