@@ -27,6 +27,10 @@ function transformToLis(obj) {
   return arr;
 };
 
+// return Object.keys(obj).map(key =>
+//   `<li>${key}: ${obj[key]}</li>`);
+// };
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -40,10 +44,16 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 const count = (target, input) => {
   // Solution code here...
   // let num = 0;
-  let flatArr = input.reduce((accumulator, currentValue) => {
-    console.log('accumulator', accumulator);
-    console.log('currenbtValue', currentValue);
-  }, 0);
+  let counter = 0;
+
+  for (let i = 0; i < input.length; i++) {
+    for (let j = 0; j < input[i].length; j++) {
+      if (input[i][j] === target) {
+        counter = counter + 1;
+      }
+    }
+  }
+  return counter;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -58,7 +68,17 @@ For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 
 const totalSum = (input) => {
   // Solution code here...
+  let results = 0;
+
+  for (let i = 0; i < input.length; i++) {
+    for (let j = 0; j < input[i].length; j++) {
+      results = results + input[i][j];
+    }
+  }
+
+  return results;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
