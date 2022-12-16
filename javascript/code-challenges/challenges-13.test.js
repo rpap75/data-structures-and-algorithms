@@ -5,10 +5,10 @@ CHALLENGE 1 - Review
 
 Write a function named longestString that takes in an array of strings and returns the index position of the longest string.
 ------------------------------------------------------------------------------------------------ */
-
+x
 const longestString = (arr) => {
-// Solution code here...
-let longestStr = 0;
+  // Solution code here...
+  let longestStr = 0;
   let longStrIdx = -1;
   for (let i = 0; i < arr.length; i++) {
     if (arr[i].length > longestStr) {
@@ -200,7 +200,7 @@ describe('Testing challenge 1', () => {
   test('It should return an index position of the longest string', () => {
     const strArray1 = ['Ginger', 'Goose', 'Tangerine', 'Rosie', 'Mario', 'Malaki']
     const strArray2 = [];
-    const strArray3= ['Ginger']
+    const strArray3 = ['Ginger']
 
     expect(longestString(strArray1)).toStrictEqual(2);
     expect(longestString(strArray2)).toStrictEqual(-1);
