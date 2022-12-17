@@ -5,7 +5,7 @@ CHALLENGE 1 - Review
 
 Write a function named longestString that takes in an array of strings and returns the index position of the longest string.
 ------------------------------------------------------------------------------------------------ */
-x
+
 const longestString = (arr) => {
   // Solution code here...
   let longestStr = 0;
